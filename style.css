@@ -1,0 +1,152 @@
+ /* écran mobile */
+/* debut header  */
+ .intro span{
+    color:#FF1400 ;
+  }
+
+.background-section {
+  background-image: url('images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: rgb(235, 241, 239);
+  background-position: center center;
+  height: auto; /* hauteur de la section */
+  position: relative;
+  height: 100vh;
+}
+ 
+
+
+.custom-bg {
+  background-color: #EFEFEF;
+}
+
+
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card1{
+  height:200px;
+}
+
+.body span{
+  font-weight:bold;
+}
+/* section 3 */
+.overlay {
+  background-color: black;
+  opacity: 0.7; /* Transparence de 70% */
+}
+
+img {
+  z-index: -30%; /* Met l'image au-dessus de la div */
+}
+
+
+.image-flux{
+  transform: translateX(-50px);
+  z-index: 1;
+/*   position: relative;
+  left: -30px;
+  top: -100px; */
+}
+
+.texte-flux{
+  transform: translateX(50px);
+  z-index: 1;
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) { /* écran tablette */
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (min-width:1021px){
+
+.navbar{
+ margin-right: 100px;
+ margin-left: 100px;
+}
+
+.bg-info{
+  width:100%;
+  height:100%;
+}
+ 
+
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* couleur du texte */
+  }
+
+  .texte-container {
+    flex-basis: 50%;
+    padding-right: 60px;
+    text-align: center;
+  }
+  
+  .image-container {
+    flex-basis: 100%;
+  }
+  
+  img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  body{
+    color: #1B269D;
+  }
+
+.cards{
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+
+
+/* place section 2 homepage  */
+
+.card2{
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+}
+
+}
+
+/* place section 3 homepage */
+
+.overlay {
+  background-color: black;
+  opacity: 0.7; /* Transparence de 70% */
+}
+
+img {
+  z-index: 1; /* Met l'image au-dessus de la div */
+}
+Dans ce code, nous avons utilisé les classes Bootstrap position-relative et position-absolute pour positionner la div overlay par rapport à la section parente. Nous avons également utilisé les classes w-100 et h-100 pour définir la largeur et la hauteur de la div overlay à 100% de la largeur et de la hauteur de la section parente. Enfin, nous avons utilisé la classe img-fluid pour rendre l'image responsive.
+
+
+
+
+
+
+
